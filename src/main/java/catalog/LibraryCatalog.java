@@ -1,0 +1,60 @@
+package catalog;
+
+import java.util.ArrayList;
+
+// A class representing a catalog of books. Assumes there is only one copy of each book.
+public class LibraryCatalog {
+    private ArrayList<Book> books;
+
+    // TODO: implement all functions with the ArrayList first;
+    //  When you are done, add a hash map that maps a title to a book, and change implementations of addBook, checkoutBook, returnBook
+    //private HashMap<String, Book> bookMap;
+
+    public LibraryCatalog() {
+        books = new ArrayList<>();
+    }
+
+    /**
+     * Add a book to the ArrayList books
+     * @param title title of the book
+     * @param author author of the book
+     */
+    public void addBook(String title, String author) {
+        // FILL IN CODE:
+        // Create a Book object given the title and author
+        // Add the book to the ArrayList called books declared on top of the class.
+
+    }
+
+    /**
+     * Find the book by title and if it's available, check it out and return true.
+     * If the book is not found or not available, return false
+     * @param title title of the book
+     * @return true if we could check out the book, and false otherwise
+     */
+    public boolean checkoutBook(String title) {
+        // FILL IN CODE
+        return false;
+    }
+
+    /**
+     * Find the book by title (you can add a private method), and if it's currently checked out, return it to the library and return true.
+     * If the book is not found or not checked out, return false.
+     * @param title title of the book
+     * @return true if we could return the book to the library, and false otherwise
+     */
+    public boolean returnBook(String title) {
+        // FILL IN CODE
+
+        return false;
+    }
+
+    /**
+     * Print books that are not checked out
+     */
+    public void printAvailableBooks() {
+        // FILL IN CODE
+
+    }
+
+}
